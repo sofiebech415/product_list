@@ -38,3 +38,14 @@ header {
   text-decoration: none;
   color: black;
 }
+
+/* back button */
+#backbutton {
+  margin: 2rem 0;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+}
+
+#backbutton:hover {
+  cursor: pointer;
+}
