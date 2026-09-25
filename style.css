@@ -1,5 +1,11 @@
 body {
   background-color: rgb(231, 231, 231);
+  font-family: sans-serif;
+
+  h1 {
+    justify-self: center;
+    margin: 3rem;
+  }
 }
 
 .produktliste {
@@ -27,9 +33,6 @@ article:hover {
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 1rem;
   border: 2px solid black;
 }
@@ -37,6 +40,12 @@ header {
 .menu a {
   text-decoration: none;
   color: black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* back button */
@@ -48,4 +57,25 @@ header {
 
 #backbutton:hover {
   cursor: pointer;
+}
+
+/* forside */
+
+#catListContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 5rem;
+
+  a {
+    padding: 2rem;
+    text-decoration: none;
+    background-color: antiquewhite;
+    color: rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
 }
