@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(245, 240, 229);
   font-family: sans-serif;
 
   h1 {
@@ -14,8 +14,15 @@ body {
   gap: 1rem;
 }
 
+.udsolgt {
+  filter: grayscale(1);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 article {
   display: grid;
+  position: relative;
   grid-template-rows: subgrid;
   grid-row: span 5;
   background-color: rgb(255, 255, 255);
@@ -26,6 +33,14 @@ article {
   }
 }
 
+.tilbudslabel {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  background-color: rgb(246, 255, 0);
+}
+
 article:hover {
   cursor: pointer;
   transform: translateY(-6px);
@@ -34,7 +49,8 @@ article:hover {
 
 header {
   padding: 1rem;
-  border: 2px solid black;
+  background-color: white;
+  margin: 0;
 }
 
 .menu a {
@@ -44,8 +60,9 @@ header {
 
 nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 5rem;
 }
 
 /* back button */
@@ -64,18 +81,29 @@ nav ul {
 #catListContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem 5rem;
+  gap: 4rem 5rem;
+  margin: 10rem 20rem;
 
   a {
     padding: 2rem;
     text-decoration: none;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border-radius: 0.5rem;
-    box-shadow: 2px 2px 5px;
+    box-shadow: 2px 2px 7px;
+    border: 2.5px solid black;
   }
 
   a:hover {
     cursor: pointer;
   }
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
