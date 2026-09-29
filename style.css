@@ -5,6 +5,12 @@ body {
   h1 {
     justify-self: center;
     margin: 3rem;
+    font-size: 70px;
+  }
+
+  h2 {
+    justify-self: center;
+    font-size: 35px;
   }
 }
 
@@ -27,6 +33,7 @@ article {
   grid-row: span 5;
   background-color: rgb(255, 255, 255);
   padding: 1rem;
+  text-decoration: none;
 
   img {
     max-width: 100%;
@@ -82,21 +89,28 @@ nav ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem 5rem;
-  margin: 10rem 20rem;
+  margin: 5rem 10rem;
 
   a {
     padding: 2rem;
-    text-decoration: none;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    border-radius: 0.5rem;
-    box-shadow: 2px 2px 7px;
+    box-shadow: 0.5px 0.5px 10px;
     border: 2.5px solid black;
+    text-decoration: none;
   }
 
   a:hover {
     cursor: pointer;
   }
+}
+
+/* knapper ved produktliste */
+
+#filtre button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 /* footer */
